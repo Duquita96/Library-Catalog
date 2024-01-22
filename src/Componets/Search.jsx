@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import { useSearchParams } from 'react-router-dom';
 import getBooks from "./data.js";
 
-function Search() {
+function Search(props) {
   const [searchParams, setSearchParams] = useSearchParams();
   const [buttonText, setButtonText] = useState("Search");
   const [books, setBooks] = useState([]);
   const [selectedBook, setSelectedBook] = useState(null);
 
+
+  
   function toggleInput() {
     const input = document.getElementById("inputSearch");
 
@@ -17,7 +19,7 @@ function Search() {
       setBooks([]); // Limpiar la lista de libros cuando se oculta la entrada
       setSelectedBook(null); // Limpiar el libro seleccionado
     } else {
-      setButtonText("Hide");
+      setButtonText("Hide" + props.pText + ", " + props.pText2 + ", " + props.pText3);
       input.style.display = "inline-block";
       setBooks(getBooks()); // Cargar los datos de los libros cuando se muestra la entrada
     }
@@ -75,3 +77,4 @@ function Search() {
 }
 
 export default Search;
+

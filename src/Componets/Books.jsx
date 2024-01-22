@@ -1,8 +1,10 @@
 import React from "react"
 
-function Books(){
+function Books(props){
 return(
-    <p>prueba pull</p>
+    <div id={props.id}>
+    <p>prueba pull en Books {props.masTxt}</p>
+    </div>
 )
 }
 
