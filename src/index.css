@@ -1,52 +1,42 @@
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  font-size: 15px;
+  color: #ffffff;
   text-decoration: inherit;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 a:hover {
-  color: #535bf2;
+  color: #020202;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
 button {
   border-radius: 8px;
   border: 1px solid transparent;
   margin: 100px;
-  width: 200px;
-  height: 100px;
+  width: 100px;
+  height: 50px;
   padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 12px;
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #070707;
 }
 button:focus,
 button:focus-visible {
@@ -54,29 +44,57 @@ button:focus-visible {
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
+  /* :root {
+    color: #040404;
     background-color: #ffffff;
-  }
+  } */
   a:hover {
-    color: #747bff;
+    color: #ffffff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #f3f2f2;
+    border: 3px solid gray;
   }
 }
 
 #buttonsHeader{
   display: flex;
   justify-content: space-between;
+
 }
 
 #filterBooksId,
 #b2{
   display: none;
+  max-width: 100%;
 }
 
 #buttonsHeader{
   display: flex;
   justify-content: space-between;
+
+}
+
+#DisplayBookData{
+  display: flex;
+  text-align: left;
+  font-size: 15px;
+}
+
+#BookInsideData{
+  margin: 50px;
+}
+
+#inputSearch{
+  display: inline-block;
+}
+
+#allBooksDisplay{
+  width: 75%;
+  display: grid;
+  grid-template-columns: 35% 35% 35%;
+}
+
+body{
+  background-color: rgb(15, 15, 15);
 }

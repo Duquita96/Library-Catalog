@@ -17,12 +17,6 @@ function Header() {
       {/* <MyButtonComponent id="1" textoDelBoton="TextoDeMiBoton1" componenteConQuienInteractua="referenciaAlComponente" refAOtroBoton="refBt2"/> */}
       <MyButtonComponent id="buttonSearch" btnTxt="Bt2" ref_id_otro_Componente="b2" />
 
-
-
-      {/* <MyButtonComponent id="3" btnTxt="Bt3" ref_id_otro_Componente="b3" />
-      <Books id="b3"/>  */}
-
-
     </div>
     <div>
 
