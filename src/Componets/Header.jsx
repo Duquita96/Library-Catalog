@@ -1,21 +1,36 @@
-import Search from "../Componets/Search";
+import FilterBooksList from "./FilterBooksList";
 import MyButtonComponent from "../Componets/MyButtonComponent";
-import searchButton from "../Componets/Search";
 import Books from "./Books";
+import React, { useState } from "react";
 
 function Header() {
+  //const [showSearch, setShowSearch] = useState(false);
+ // const [showBooks, setShowBooks] = useState(false);
   return (
     <div>
-      <Search pText="papo"/>
-      <MyButtonComponent id="1" textoDelBoton="TextoDeMiBoton1" componenteConQuienInteractua="referenciaAlComponente" refAOtroBoton="refBt2"/>
-      <MyButtonComponent id="2" btnTxt="Bt2" compid="b2"/>
-      <MyButtonComponent id="3" btnTxt="Bt3" compid="b3"/>
+      <div id="buttonsHeader">
+      {/* boton de tabla de libros */}
+      <MyButtonComponent  btnTxt="Books Table" ref_id_otro_Componente="filterBooksId" />
+      {/* Search esta en el div de abajo para que no se muestre con el mismo style de los botones */}
 
-      <Books id="b2" masTxt=" LotR"/> 
-      <Books id="b3"masTxt=" acotar"/> 
-      {/* <button>Adding</button>
-      <button>About US</button> */}
+
+      {/* <MyButtonComponent id="1" textoDelBoton="TextoDeMiBoton1" componenteConQuienInteractua="referenciaAlComponente" refAOtroBoton="refBt2"/> */}
+      <MyButtonComponent id="buttonSearch" btnTxt="Bt2" ref_id_otro_Componente="b2" />
+
+
+
+      {/* <MyButtonComponent id="3" btnTxt="Bt3" ref_id_otro_Componente="b3" />
+      <Books id="b3"/>  */}
+
+
     </div>
+    <div>
+
+        <FilterBooksList id="filterBooksId" class ="buttons" />
+        <Books id="b2" masTxt="placeHolder" class ="buttons"/>
+      </div>
+    </div>
+    
   );
 }
 
