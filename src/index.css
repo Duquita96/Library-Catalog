@@ -18,7 +18,7 @@ a {
   margin-right: 15px;
 }
 a:hover {
-  color: #020202;
+  color: #ffffff;
 }
 
 
@@ -36,7 +36,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #070707;
+  border-color: #ffffff;
 }
 button:focus,
 button:focus-visible {
@@ -44,10 +44,6 @@ button:focus-visible {
 }
 
 @media (prefers-color-scheme: light) {
-  /* :root {
-    color: #040404;
-    background-color: #ffffff;
-  } */
   a:hover {
     color: #ffffff;
   }
@@ -82,7 +78,9 @@ button:focus-visible {
 }
 
 #BookInsideData{
-  margin: 50px;
+  margin: 0px 50px 0px 50px;
+  border-left: 3px solid rgb(255, 255, 255);
+  padding-left: 15px;
 }
 
 #inputSearch{
@@ -96,5 +94,5 @@ button:focus-visible {
 }
 
 body{
-  background-color: rgb(15, 15, 15);
+  background-color: rgb(56, 56, 56);
 }
