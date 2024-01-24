@@ -1,14 +1,15 @@
 import { useState } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom';
-import Header from "../src/Componets/Header";
-
-import './App.css'
+import Timer from "./Componets/WeatherSite";
+import Weather from './Componets/Weather';
+import './index.css'
 
 function App() {
 return(
-  <div>
+  <div id='DetailsWeatherBox'>
     <Router>
-         <Header/> 
+         <Timer/> 
+         < Weather/>
     </Router>
 
   </div>
